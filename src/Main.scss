@@ -1,0 +1,89 @@
+@import "./Styles/common.scss";
+
+body {
+  transition: background-color ease-in 0.5s 0s;
+}
+
+*::selection {
+  background: $hover;
+  color: #141414;
+}
+
+.Main {
+  @include flexBox(space-between, flex-start, row);
+  font-size: 17px;
+  color: #141414;
+  font-weight: 400;
+  line-height: 1.6;
+  cursor: default;
+  transition: color ease-in 0.5s 0s;
+  &.darkMode {
+    color: #ffffff;
+  }
+  .mainLeft {
+    @include flexBox(space-between, flex-start, row);
+  }
+  .profileContainer {
+    max-width: 400px;
+    min-width: 379px;
+    margin: 50px;
+  }
+  h1 {
+    font-weight: 500;
+    margin-bottom: 28px;
+    span {
+      font-weight: 700;
+    }
+  }
+  p a:hover {
+    @include gradient;
+  }
+  .detailInfo {
+    margin: 60px 0 42px 0;
+    width: 400px;
+    height: 300px;
+  }
+
+  .socialLink {
+    display: block;
+    text-decoration: underline;
+    &:hover {
+      @include gradient;
+    }
+  }
+  .tabs {
+    margin: 219px 50px 50px 50px;
+    max-width: 260px;
+    display: block;
+    li {
+      max-width: 260px;
+      text-decoration: underline;
+      cursor: pointer;
+      &:hover {
+        @include gradient;
+      }
+    }
+    li:last-child {
+      margin-top: 135px;
+    }
+  }
+  .desc {
+    margin: 219px 50px 50px 50px;
+    max-width: 560px;
+    a {
+      text-decoration: underline;
+      &:hover {
+        @include gradient;
+      }
+    }
+  }
+  .darkMode {
+    position: fixed;
+    top: 50px;
+    right: 80px;
+    font-size: 2em;
+    &:hover {
+      @include gradient;
+    }
+  }
+}

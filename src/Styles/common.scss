@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", -apple-system, system-ui, "Apple SD Gothic Neo",
+    AppleSDGothicNeo, "Malgun Gothic", "맑은 고딕", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+// variables
+$breakpoint-tablet: 770px;
+
+@mixin tab {
+  @media screen and (max-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+
+@mixin flexBox($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin gradient {
+  background: linear-gradient(to right, #00ff99, #00ffee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// colors
+$hover: #00ff99;
