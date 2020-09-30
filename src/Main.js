@@ -49,8 +49,8 @@ export default class Main extends React.Component {
                 재사용가능한 UI를 디자인하는 것에 관심이 많은 <br />
                 인터페이스 디자이너 & 프론트엔드 엔지니어. <br />
                 다양한 사용자를 위한 디지털 서비스를 디자인하다 <br />
-                개발에 관심이 생겨 관심이 생겨 개발자로서의 커리어를 <br />
-                시작했습니다. <br />
+                개발에 관심이 생겨 관심이 생겨 개발자로서의 <br />
+                커리어를 시작했습니다. <br />
                 <br />
                 새로운 사람들과의 커뮤니케이션을 즐기고, <br />
                 사용자에게 즐거움을 선사하는 서비스를 기획할 때 <br />
@@ -64,8 +64,7 @@ export default class Main extends React.Component {
                 Hi, I'm Jihyung, an interface designer & front-end developer.
                 I've designed digital products to a variety of users over 3+
                 years. When I plan a service that makes people’s life easier and
-                more efficient, I feel accomplishment. Eventually, I decided to
-                take this new career path as a web developer. <br />
+                more efficient, I feel accomplishment. <br />
                 <br />
                 I'm a sociable individual who enjoys interacting and
                 communicating with new people. Feel free to contact me by any
@@ -146,13 +145,27 @@ const DESCRIPTION = {
     <>
       UXUI Designer & Researcher
       <br />
-      at HAII Inc. 2019
+      at{" "}
+      <a
+        clssName="Haii"
+        href="https://www.haii.io/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        HAII Inc.
+      </a>{" "}
+      2019
     </>
   ),
   2: (
     <>
       Completion of{" "}
-      <a className="wecode" href="https://wecode.co.kr/">
+      <a
+        className="wecode"
+        href="https://wecode.co.kr/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         Wecode Bootcamp
       </a>
       <br />

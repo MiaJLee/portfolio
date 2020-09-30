@@ -1,0 +1,25 @@
+@import "./Styles/common.scss";
+
+.Design {
+  @include flexBox(flex-start, flex-start, row);
+  // border: 1px solid red;
+  width: 900px;
+  height: 650px;
+  overflow-x: scroll;
+  span.rotate {
+    transform: rotate(-90deg);
+    margin: 25px 25px 0 25px;
+    width: 100px;
+    text-align: center;
+  }
+  img.UXUI {
+    margin-right: 50px;
+    height: 400px;
+    width: auto;
+  }
+  img.editorial {
+    margin: 0 25px;
+    width: 450px;
+    height: auto;
+  }
+}

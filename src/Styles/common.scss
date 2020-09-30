@@ -12,10 +12,17 @@ body {
 }
 
 // variables
-$breakpoint-tablet: 770px;
+$breakpoint-tablet: 800px;
+$breakpoint-desktop: 1024px;
 
-@mixin tab {
-  @media screen and (max-width: #{$breakpoint-tablet}) {
+@mixin tablet {
+  @media (max-width: #{$breakpoint-desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
     @content;
   }
 }
